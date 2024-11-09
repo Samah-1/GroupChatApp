@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:group_chat_app/pages/chat_page.dart';
 
-class GroupTile extends StatelessWidget {
+class GroupTile {
   final String userName;
   final String groupId;
   final String groupName;
-
-  GroupTile({this.userName, this.groupId, this.groupName});
+//GroupTile({this.userName, this.groupId, this.groupName});
+  //GroupTile({required this.userName, this.groupId = 'Default Group ID', this.groupName = 'Default Group Name'});
+  GroupTile({required this.userName, this.groupId = 'Default Sender', this.groupName = 'Default Group Name'});
+}
 
   @override
   Widget build(BuildContext context) {
@@ -28,4 +30,3 @@ class GroupTile extends StatelessWidget {
       ),
     );
   }
-}

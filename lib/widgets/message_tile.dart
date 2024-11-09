@@ -5,8 +5,8 @@ class MessageTile extends StatelessWidget {
   final String message;
   final String sender;
   final bool sentByMe;
-
-  MessageTile({this.message, this.sender, this.sentByMe});
+//MessageTile({this.message, this.sender, this.sentByMe});
+ MessageTile({required this.message, this.sender = 'Default Sender', this.sentByMe = false});
 
 
   @override
